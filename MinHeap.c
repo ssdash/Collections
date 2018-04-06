@@ -20,10 +20,10 @@ void heapify(int *arr,int heapsize,int i)
 	    arr[i] = temp;
 	    heapify(arr,heapsize,min);
 	}
-    }
+}
 
-    void MinHeap(int *arr,int size)
-    {
+void MinHeap(int *arr,int size)
+{
 	int i,heapsize;
 	heapsize = size;
 	for(i = size/2-1;i>=0;i--)

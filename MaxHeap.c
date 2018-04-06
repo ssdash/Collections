@@ -1,4 +1,4 @@
-#include<stdio.h>
+ 26 } 26 } 26 }#include<stdio.h>
 #include<stdlib.h>
 
 void maxheapify(int *arr,int heapsize,int i)
@@ -29,6 +29,7 @@ void Heapsort(int *arr,int size)
 {
    int  HeapSize = size;
     int HeapLength = HeapSize;
+    // Find largest non-leaf index.
     for(int i=((HeapLength/2)-1);i>=0;i--)
 
 	maxheapify(arr,HeapSize,i);
